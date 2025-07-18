@@ -1,23 +1,34 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+## Build results
+bin/
+obj/
+out/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# testing
-/coverage
+## ASP.NET Core published files
+wwwroot/uploads/
+wwwroot/lib/
 
-# production
-/build
+## Rider & VS Code
+.vscode/
+.idea/
 
-# misc
+## Logs and database files
+*.log
+*.db
+*.sqlite
+*.bak
+
+## Secrets / config
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+*.env
+
+## OS files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+Thumbs.db
